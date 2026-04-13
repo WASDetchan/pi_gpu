@@ -159,7 +159,5 @@ fn main() {
         .take_while(|(a, b)| a == b)
         .count();
 
-    println!(
-        "Result: {result:<10}/{n:<11}, Оценка числа π = {pi:.7}, Совпадающие цифры = {matchc}, Погрешность = {delta:.7}"
-    );
+    println!("{result:<11}/{n:<11}  {pi:.9}  {delta:.9}  {matchc}");
 }
